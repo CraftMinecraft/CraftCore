@@ -1,0 +1,5 @@
+# http://dev.bukkit.org/server-mods/CraftSuite/pages/CoreConfiguration
+enabled: true
+servers:
+    - "50.49.250.107:25566"
+    - "craftingcorners.com:58579"

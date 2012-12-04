@@ -1,4 +1,4 @@
-package com.craftminecraft.craftcore.utils.json.parser;
+package com.craftminecraft.craftsuite.utils.json.parser;
 
 /**
  * ParseException explains why and where the error occurs in source JSON text.
@@ -40,7 +40,7 @@ public class ParseException extends Exception {
 	}
 	
 	/**
-	 * @see com.craftminecraft.craftcore.utils.json.parser.JSONParser#getPosition()
+	 * @see com.craftminecraft.craftsuite.utils.json.parser.JSONParser#getPosition()
 	 * 
 	 * @return The character position (starting with 0) of the input where the error occurs.
 	 */
@@ -53,11 +53,11 @@ public class ParseException extends Exception {
 	}
 	
 	/**
-	 * @see com.craftminecraft.craftcore.utils.json.parser.Yytoken
+	 * @see com.craftminecraft.craftsuite.utils.json.parser.Yytoken
 	 * 
 	 * @return One of the following base on the value of errorType:
 	 * 		   	ERROR_UNEXPECTED_CHAR		java.lang.Character
-	 * 			ERROR_UNEXPECTED_TOKEN		com.craftminecraft.craftcore.utils.json.parser.Yytoken
+	 * 			ERROR_UNEXPECTED_TOKEN		com.craftminecraft.craftsuite.utils.json.parser.Yytoken
 	 * 			ERROR_UNEXPECTED_EXCEPTION	java.lang.Exception
 	 */
 	public Object getUnexpectedObject() {

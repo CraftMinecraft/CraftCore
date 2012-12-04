@@ -1,4 +1,4 @@
-package com.craftminecraft.craftcore.utils.json;
+package com.craftminecraft.craftsuite.utils.json;
 
 /**
  * Beans that support customized output of JSON text shall implement this interface.  

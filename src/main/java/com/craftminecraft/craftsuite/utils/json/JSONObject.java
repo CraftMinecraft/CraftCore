@@ -2,7 +2,7 @@
  * $Id: JSONObject.java,v 1.1 2006/04/15 14:10:48 platform Exp $
  * Created on 2006-4-10
  */
-package com.craftminecraft.craftcore.utils.json;
+package com.craftminecraft.craftsuite.utils.json;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -16,30 +16,13 @@ import java.util.Map;
  * @author FangYidong<fangyidong@yahoo.com.cn>
  */
 public class JSONObject extends HashMap implements Map, JSONAware, JSONStreamAware{
-	
 	private static final long serialVersionUID = -503443796854799292L;
-	
-	
-	public JSONObject() {
-		super();
-	}
-
-	/**
-	 * Allows creation of a JSONObject from a Map. After that, both the
-	 * generated JSONObject and the Map can be modified independently.
-	 * 
-	 * @param map
-	 */
-	public JSONObject(Map map) {
-		super(map);
-	}
-
 
     /**
      * Encode a map into JSON text and write it to out.
      * If this map is also a JSONAware or JSONStreamAware, JSONAware or JSONStreamAware specific behaviours will be ignored at this top level.
      * 
-     * @see com.craftminecraft.craftcore.utils.json.JSONValue#writeJSONString(Object, Writer)
+     * @see com.craftminecraft.craftsuite.utils.json.JSONValue#writeJSONString(Object, Writer)
      * 
      * @param map
      * @param out
@@ -77,7 +60,7 @@ public class JSONObject extends HashMap implements Map, JSONAware, JSONStreamAwa
 	 * Convert a map to JSON text. The result is a JSON object. 
 	 * If this map is also a JSONAware, JSONAware specific behaviours will be omitted at this top level.
 	 * 
-	 * @see com.craftminecraft.craftcore.utils.json.JSONValue#toJSONString(Object)
+	 * @see com.craftminecraft.craftsuite.utils.json.JSONValue#toJSONString(Object)
 	 * 
 	 * @param map
 	 * @return JSON text, or "null" if map is null.
@@ -135,7 +118,7 @@ public class JSONObject extends HashMap implements Map, JSONAware, JSONStreamAwa
 	 * Escape quotes, \, /, \r, \n, \b, \f, \t and other control characters (U+0000 through U+001F).
 	 * It's the same as JSONValue.escape() only for compatibility here.
 	 * 
-	 * @see com.craftminecraft.craftcore.utils.json.JSONValue#escape(String)
+	 * @see com.craftminecraft.craftsuite.utils.json.JSONValue#escape(String)
 	 * 
 	 * @param s
 	 * @return

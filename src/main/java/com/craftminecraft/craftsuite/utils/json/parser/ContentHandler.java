@@ -1,4 +1,4 @@
-package com.craftminecraft.craftcore.utils.json.parser;
+package com.craftminecraft.craftsuite.utils.json.parser;
 
 import java.io.IOException;
 
@@ -6,7 +6,7 @@ import java.io.IOException;
  * A simplified and stoppable SAX-like content handler for stream processing of JSON text. 
  * 
  * @see org.xml.sax.ContentHandler
- * @see com.craftminecraft.craftcore.utils.json.parser.JSONParser#parse(java.io.Reader, ContentHandler, boolean)
+ * @see com.craftminecraft.craftsuite.utils.json.parser.JSONParser#parse(java.io.Reader, ContentHandler, boolean)
  * 
  * @author FangYidong<fangyidong@yahoo.com.cn>
  */

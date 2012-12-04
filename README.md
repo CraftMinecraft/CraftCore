@@ -6,15 +6,10 @@ The server-to-server bridging plugin suite.
 ## Networking Protocole Specification ##
 ### Permission Sets ###
 There are several "permission sets" : 
-* Unauthenticated.
-* Verified
-* Paired
-* CMC Network
-
-Unauthenticated servers are servers which aren't registered by the CMC authority. They can still participate as "watchers" E.G. reading the messages, but any message they send to the network will be ignored.
-Verified servers have a certificate issued from the CMC authority. They can send and recieve certain "safe" messages (player logged-in). Any server proven to be creating trouble to the network will see their certificate revoked and an immediate ban from the network.
-Paired servers are server that has authenticated eachother without going through the CMC authority. It is up to paired server to decide of the permissions they give eachother. They may allow full messaging or only certain shared function (especially useful for shared economy)
-CMC Network : full permissions between eachother.
+* Unauthenticated : servers which aren't registered by the CMC authority. They can still participate as "watchers" E.G. reading the messages, but any message they send to the network will be ignored.
+* Verified : Verified servers have a certificate issued from the CMC authority. They can send and recieve certain "safe" messages (player logged-in). Any server proven to be creating trouble to the network will see their certificate revoked and an immediate ban from the network.
+* Paired : Paired servers are server that has authenticated eachother without going through the CMC authority. It is up to the server owners to decide which information transit between the servers. For instance, they may only enable ban sharing, or share the economy entirely. Paired server also syncs eachother based on timestamp, because of the lack of a masterserver. When a server goes offline, the other sever will cache the information to send to the server when it goes back up, coupled with a timestamp. It is up to the server owner to decide which "features" are to talk through this shared server.
+* CMC Network : CMC Network : full permissions between eachother.
 
 ### Messaging System ###
 The server sends a json object that can be read to any valid JSON parser. The parser used by CraftSuite is json-simple. The JSON object is like so : 

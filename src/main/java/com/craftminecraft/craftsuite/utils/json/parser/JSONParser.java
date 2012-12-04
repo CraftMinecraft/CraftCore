@@ -2,7 +2,7 @@
  * $Id: JSONParser.java,v 1.1 2006/04/15 14:10:48 platform Exp $
  * Created on 2006-4-15
  */
-package com.craftminecraft.craftcore.utils.json.parser;
+package com.craftminecraft.craftsuite.utils.json.parser;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -11,8 +11,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
-import com.craftminecraft.craftcore.utils.json.JSONArray;
-import com.craftminecraft.craftcore.utils.json.JSONObject;
+import com.craftminecraft.craftsuite.utils.json.JSONArray;
+import com.craftminecraft.craftsuite.utils.json.JSONObject;
 
 
 /**
@@ -98,8 +98,8 @@ public class JSONParser {
 	 * @param in
      * @param containerFactory - Use this factory to createyour own JSON object and JSON array containers.
 	 * @return Instance of the following:
-	 *  com.craftminecraft.craftcore.utils.json.JSONObject,
-	 * 	com.craftminecraft.craftcore.utils.json.JSONArray,
+	 *  com.craftminecraft.craftsuite.utils.json.JSONObject,
+	 * 	com.craftminecraft.craftsuite.utils.json.JSONArray,
 	 * 	java.lang.String,
 	 * 	java.lang.Number,
 	 * 	java.lang.Boolean,

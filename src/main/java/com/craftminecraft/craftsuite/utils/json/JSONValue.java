@@ -2,7 +2,7 @@
  * $Id: JSONValue.java,v 1.1 2006/04/15 14:37:04 platform Exp $
  * Created on 2006-4-15
  */
-package com.craftminecraft.craftcore.utils.json;
+package com.craftminecraft.craftsuite.utils.json;
 
 import java.io.IOException;
 import java.io.Reader;
@@ -11,8 +11,8 @@ import java.io.Writer;
 import java.util.List;
 import java.util.Map;
 
-import com.craftminecraft.craftcore.utils.json.parser.JSONParser;
-import com.craftminecraft.craftcore.utils.json.parser.ParseException;
+import com.craftminecraft.craftsuite.utils.json.parser.JSONParser;
+import com.craftminecraft.craftsuite.utils.json.parser.ParseException;
 
 
 /**
@@ -23,13 +23,13 @@ public class JSONValue {
 	 * Parse JSON text into java object from the input source. 
 	 * Please use parseWithException() if you don't want to ignore the exception.
 	 * 
-	 * @see com.craftminecraft.craftcore.utils.json.parser.JSONParser#parse(Reader)
+	 * @see com.craftminecraft.craftsuite.utils.json.parser.JSONParser#parse(Reader)
 	 * @see #parseWithException(Reader)
 	 * 
 	 * @param in
 	 * @return Instance of the following:
-	 *	com.craftminecraft.craftcore.utils.json.JSONObject,
-	 * 	com.craftminecraft.craftcore.utils.json.JSONArray,
+	 *	com.craftminecraft.craftsuite.utils.json.JSONObject,
+	 * 	com.craftminecraft.craftsuite.utils.json.JSONArray,
 	 * 	java.lang.String,
 	 * 	java.lang.Number,
 	 * 	java.lang.Boolean,
@@ -54,12 +54,12 @@ public class JSONValue {
 	/**
 	 * Parse JSON text into java object from the input source.
 	 * 
-	 * @see com.craftminecraft.craftcore.utils.json.parser.JSONParser
+	 * @see com.craftminecraft.craftsuite.utils.json.parser.JSONParser
 	 * 
 	 * @param in
 	 * @return Instance of the following:
-	 * 	com.craftminecraft.craftcore.utils.json.JSONObject,
-	 * 	com.craftminecraft.craftcore.utils.json.JSONArray,
+	 * 	com.craftminecraft.craftsuite.utils.json.JSONObject,
+	 * 	com.craftminecraft.craftsuite.utils.json.JSONArray,
 	 * 	java.lang.String,
 	 * 	java.lang.Number,
 	 * 	java.lang.Boolean,
@@ -86,8 +86,8 @@ public class JSONValue {
      * DO NOT call this method from writeJSONString(Writer) of a class that implements both JSONStreamAware and (Map or List) with 
      * "this" as the first parameter, use JSONObject.writeJSONString(Map, Writer) or JSONArray.writeJSONString(List, Writer) instead. 
      * 
-     * @see com.craftminecraft.craftcore.utils.json.JSONObject#writeJSONString(Map, Writer)
-     * @see com.craftminecraft.craftcore.utils.json.JSONArray#writeJSONString(List, Writer)
+     * @see com.craftminecraft.craftsuite.utils.json.JSONObject#writeJSONString(Map, Writer)
+     * @see com.craftminecraft.craftsuite.utils.json.JSONArray#writeJSONString(List, Writer)
      * 
      * @param value
      * @param writer
@@ -162,8 +162,8 @@ public class JSONValue {
 	 * DO NOT call this method from toJSONString() of a class that implements both JSONAware and Map or List with 
 	 * "this" as the parameter, use JSONObject.toJSONString(Map) or JSONArray.toJSONString(List) instead. 
 	 * 
-	 * @see com.craftminecraft.craftcore.utils.json.JSONObject#toJSONString(Map)
-	 * @see com.craftminecraft.craftcore.utils.json.JSONArray#toJSONString(List)
+	 * @see com.craftminecraft.craftsuite.utils.json.JSONObject#toJSONString(Map)
+	 * @see com.craftminecraft.craftsuite.utils.json.JSONArray#toJSONString(List)
 	 * 
 	 * @param value
 	 * @return JSON text, or "null" if value is null or it's an NaN or an INF number.

@@ -2,7 +2,7 @@
  * $Id: JSONArray.java,v 1.1 2006/04/15 14:10:48 platform Exp $
  * Created on 2006-4-10
  */
-package com.craftminecraft.craftcore.utils.json;
+package com.craftminecraft.craftsuite.utils.json;
 
 import java.io.IOException;
 import java.io.Writer;
@@ -23,7 +23,7 @@ public class JSONArray extends ArrayList implements List, JSONAware, JSONStreamA
      * Encode a list into JSON text and write it to out. 
      * If this list is also a JSONStreamAware or a JSONAware, JSONStreamAware and JSONAware specific behaviours will be ignored at this top level.
      * 
-     * @see com.craftminecraft.craftcore.utils.json.JSONValue#writeJSONString(Object, Writer)
+     * @see com.craftminecraft.craftsuite.utils.json.JSONValue#writeJSONString(Object, Writer)
      * 
      * @param list
      * @param out
@@ -63,7 +63,7 @@ public class JSONArray extends ArrayList implements List, JSONAware, JSONStreamA
 	 * Convert a list to JSON text. The result is a JSON array. 
 	 * If this list is also a JSONAware, JSONAware specific behaviours will be omitted at this top level.
 	 * 
-	 * @see com.craftminecraft.craftcore.utils.json.JSONValue#toJSONString(Object)
+	 * @see com.craftminecraft.craftsuite.utils.json.JSONValue#toJSONString(Object)
 	 * 
 	 * @param list
 	 * @return JSON text, or "null" if list is null.

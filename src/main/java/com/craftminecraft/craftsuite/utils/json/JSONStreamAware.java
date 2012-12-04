@@ -1,4 +1,4 @@
-package com.craftminecraft.craftcore.utils.json;
+package com.craftminecraft.craftsuite.utils.json;
 
 import java.io.IOException;
 import java.io.Writer;
